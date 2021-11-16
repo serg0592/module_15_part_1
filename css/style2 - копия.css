@@ -1,0 +1,835 @@
+.body {
+  margin: 0;
+}
+
+.body__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "logo nav";
+}
+
+.headLogo {
+  grid-area: logo;
+  margin: -0.5px;
+  background: #EEEFF1;
+}
+
+.headNav {
+  grid-area: nav;
+  margin: -0.5px;
+  background: #EEEFF1;
+}
+
+.body__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "img text"
+    "aboutme aboutme"
+    "projects projects"
+    "skills foto"
+    "video video"
+    "workspace workspace"
+    "clients clients"
+    "form form";
+}
+
+.designPic {
+  grid-area: img;
+  height: 582px;
+  background-color: #EEEFF1;
+}
+
+.designPic__img {
+  width: 357px;
+  height: 233.7px;
+  background: url(../img/Frame.png) center no-repeat;
+  margin: 149px auto auto calc(100% - 116px - 357px);
+}
+
+.designText {
+  grid-area: text;
+  height: 582px;
+  background: #EEEFF1;
+}
+
+.aboutMe {
+  grid-area: aboutme;
+}
+
+.aboutMe__text {
+  position: relative;
+  text-align: center;
+  left: calc(50% - 257px);
+  max-width: 525px;
+}
+
+.projects {
+  grid-area: projects;
+  background-color: #34547A;
+}
+
+.projects__numbers {
+  padding: 100px calc(50% - 508px);
+}
+
+.projects__pic {
+  display: inline-block;  
+  padding: 50px 85px;
+  margin: 0px -2px;
+  background: url(../img/proj_num.png) center no-repeat;
+  background-size: 141px 50px;
+}
+
+.skills {
+  grid-area: skills;
+  margin: -0.5px;
+  padding: 147px 0 0 calc(100% - 565px);
+}
+
+.skillsPic {
+  background-color: #ffffff;
+  grid-area: foto;
+
+}
+
+.myJob {
+  background-color: #EEEFF1;
+  grid-area: video;
+}
+
+.offer {
+  grid-area: form;
+  background: #EEEFF1;
+}
+
+.body__footer {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: auto;
+  grid-template-areas: "copyright socLogo";
+  background-color: #34547A;
+}
+
+.copyright-g {
+  grid-area: copyright;
+  margin-left: calc(100% - 554px);
+  padding: 50px 10px;
+}
+
+.socLogo {
+  grid-area: socLogo;
+  margin-left: 396px;
+  width: 206px;
+  height: 40px;
+}
+
+.headLogo__text {
+  font-family: 'Revalia', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 57.6px;
+  line-height: 71px;
+  text-align: center;
+  color: #34547A;
+  margin: 46px auto 0 calc(50% - 90.6px);
+  height: 72px;
+  width: 115.2px;
+}
+
+.headNav__link {
+  font-family: 'Roboto', serif;
+  margin: 0px -3px 0;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.headNav__linkMain {
+  color: #34547A;
+}
+
+.designText__text {
+  margin: 128px 0 0 15px;
+  max-width: 515px;
+}
+
+.text__h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.text__p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.designText__button {
+  background-color: #34547A;
+  height: 65px;
+  width: 225px;
+  border: 0px solid #ffffff;
+  margin-left: 15px;
+}
+
+.designText__button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.designText__buttonText {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.skills__text, .text__h2 {
+  text-align: left;
+  margin: 0;
+}
+
+.skills__bar-1 {
+  position: relative;
+  z-index: 1;
+  height: 4px;
+  width: 445px;
+  background-color: #C4C4C4;
+}
+
+.skills__bar-2 {
+  position: relative;
+  z-index: 2;
+  margin-top: -4px;
+  height: 4px;
+  width: 350px;
+  background-color: #34547A;
+}
+
+.skillsPic__img {
+  width: 555px;
+  height: 450px;
+  background: url(../img/man_foto.png) center no-repeat;
+  background-size: 555px 450px;
+  padding: 102px 20px;  
+}
+
+.myJob__video {
+  position: relative;
+  width: 1110px;
+  height: 600px;
+  left: calc(50% - 555px);
+  padding-bottom: 112px;
+}
+
+.galery {
+  grid-area: workspace;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 0px;
+  padding: 35px 0px;
+}
+
+.galery__pic {
+  display: inline-block;
+  width: 480px;
+  height: 480px;
+}
+
+.galery__pic2 {
+  background: url(../img/workspace_2.png) center no-repeat;
+}
+
+.galery__pic1 {
+  background: url(../img/workspace_1.png) center no-repeat;  
+  background-size: 480px 480px;
+}
+
+.galery__pic1--select {
+  background: url(../img/workspace_1_select.png) center no-repeat;
+}
+
+.clients {
+  grid-area: clients;
+  padding: 72px calc(50% - 640px);
+}
+
+.clients__pic {
+  display: inline-block;
+  width: 255px;
+  height: 120px;
+  background: url(../img/microsoft.png) center no-repeat;
+  padding: 0px 30px;
+}
+
+.offer__form {
+  position: relative;
+  width: 554px;
+  left: calc(50% - 278px);
+  padding-bottom: 50px;
+}
+
+.offer__formInputName, .offer__formInputEmail {
+  width: 255px;
+  height: 50px;
+  font: 400 14px Roboto;
+  text-indent: 20px;
+  margin: 10px;
+  padding: 0;
+  border: 0px solid;
+}
+
+.offer__formInputMsg {
+  width: 534px;
+  height: 175px;
+  font: 400 14px Roboto;
+  text-indent: 20px;
+  margin: 10px;
+  padding: 0;
+  border: 0px solid;
+}
+
+.offer__formButton {
+  background-color: #34547A;
+  height: 65px;
+  width: 225px;
+  border: 0px solid #ffffff;
+  margin-left: calc(50% - 112px);
+}
+
+.offer__formButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.offer__buttonText {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.copyright-g, .text__h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+
+.copyright-g .text__p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 0;
+}
+
+.socLogo__pic {
+  display: inline-block;
+  width: 43.75px;
+  height: 40px;
+  background: url(../img/soc_logo.png) center no-repeat;
+  padding: 55px 10.9px 56px;  
+}
+
+@media screen and (min-width: 1921px) {
+  .headNav__nav {
+    margin: 68px 0 0 -65px;
+    width: 651px;
+    height: 24px;
+    text-align: center;
+    line-height: 26.25px;
+    letter-spacing: 0.1em;
+  }
+
+  .headNav__link {
+    padding: 0 42px 0 0;
+  }
+
+  .designPic__img {
+        width: 357px;
+        height: 233.7px;
+        background: url(../img/Frame.png) center no-repeat;
+        margin: 149px auto auto calc(100% - 116px - 357px);
+    }
+
+  .headLogo__text {
+    margin: 46px auto auto calc(100% - 567.6px);
+    height: 72px;
+    width: 115.2px;
+  }
+
+  .text__h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .text__h2 {
+    margin: 112px 0 0 0;
+  }
+
+  .designText__text {
+    margin: 128px 0 0 15px;
+    max-width: 525px;
+  }
+
+  .skills__text, .text__p {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .headNav__nav {
+    margin: 68px 0 0 -65px;
+    width: 651px;
+    height: 24px;
+    text-align: center;
+    line-height: 26.25px;
+    letter-spacing: 0.1em;
+  }
+
+  .headNav__link {
+    padding: 0 42px 0 0;
+  }
+
+  .text__h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .designText__text {
+    margin: 128px 0 0 15px;
+    max-width: 515px;
+  }
+}
+
+@media screen and (max-width: 1278px) {
+  .clients__pic {
+    width: 19.9%;
+    height: auto;
+    padding: 0px 2.35%;
+  }
+
+  .copyright-g {
+    margin-left: calc(100% - 43vw);
+    padding: 50px 10px;
+  }
+
+  .socLogo {
+    margin-left: 31vw;
+    width: 206px;
+    height: 40px;
+  }
+}
+
+/*@media screen and (max-width: 1190px) {
+  .body__header {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .body__footer {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .headNav__nav {
+    margin: 68px 0 0 -65px;
+    width: 651px;
+    height: 24px;
+    text-align: center;
+    line-height: 26.25px;
+    letter-spacing: 0.1em;
+  }
+
+  .headNav__link {
+    padding: 0 42px 0 0;
+  }
+
+  .designPic__img {
+    margin: 149px auto auto calc(50% - 177.5px);
+  }
+
+  .text__h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .designText__text {
+    margin: 128px 0 0 15px;
+    max-width: 515px;
+  }
+
+  .projects__numbers {
+    padding: 50px calc(50% - 285px);
+  }
+
+  .skills {
+    padding: 147px 30px;
+  }
+
+  .myJob__video {
+    left: auto;
+    width: 90%;
+    height: 43vh;
+    padding: 0 5% 112px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .headNav__nav {
+    margin: 68px 0 0 -65px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+  }
+
+  .headNav__link {
+    padding: 0 42px 0 0;
+  }
+
+  .designPic__img {
+    width: 100%;
+    max-width: 357px;
+  }
+
+  .text__h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .designText__text {
+    margin: 128px 0 0 15px;
+    max-width: 515px;
+  }
+
+  .galery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0px;
+    padding: 35px 0 0 0;
+  }
+
+  .galery__pic {
+    width: 100%;
+    height: 25%;
+  }
+
+  .clients {
+    padding: 60px 0 60px calc(50% - 350px);
+  }
+
+  .clients__pic {
+    width: 300px;
+    height: auto;
+    padding: 0px 2.35%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .body__main {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .designPic {
+    height: calc(100% + 20px);
+  }
+
+  .designPic__img {
+    background-size: 90%;
+    margin: 60px 0px 0px 0px;
+  }
+
+  .designText {
+    height: calc(100% + 20px);
+  }
+
+  .headNav__nav {
+    position: relative;
+    text-align: center;
+    line-height: 39px;
+  }
+
+  .headNav__link {
+    padding: 0 42px 0 0;
+  }
+
+  .text__h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 0 3vh 0;
+  }
+
+  .designText__text {
+    margin: 3vh 2vw 0 2vw;
+  }
+
+  .designText__button {
+    position: relative;
+    background-color: #34547A;
+    left: -112.5px;
+    height: 65px;
+    width: 225px;
+    margin: 0 calc(50% - 95px) 37px;
+    padding: 0px;
+    border: 0px solid #ffffff;
+  }
+
+  .aboutMe__text {
+    left: 0;
+    margin: 1vh 10vw;
+  }
+
+  .projects__numbers {
+    padding: 10px calc(50% - 285px);
+  }
+
+  .skills {
+    padding: 30px 0 30px calc(50% - 225px);
+  }
+
+  .skillsPic__img {
+    width: 80%;
+    min-width: 100px;
+    height: auto;
+    padding: 10px 10.5%;
+  }
+
+  .myJob__video {
+    left: auto;
+    width: 90%;
+    height: 26vh;
+    padding: 0 5% 20px;
+  }
+
+  .clients {
+    padding: 60px 0 60px calc(50% - 280px);
+  }
+
+  .clients__pic {
+    width: 240px;
+    height: auto;
+    padding: 0px 2.35%;
+  }
+
+  .copyright-g {
+    margin-left: calc(100% - 43vw);
+    padding: 50px 10px;
+  }
+
+  .socLogo {
+    margin-left: 13vw;
+    width: 206px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .projects__numbers {
+    padding: 10px calc(50% - 189px);
+  }
+
+  .clients {
+    padding: 60px calc(50% - 212px);
+  }
+
+  .clients__pic {
+    width: 190px;
+    height: auto;
+    padding: 0px 2.35%;
+  }
+
+  .form {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    left: 0px;
+    padding-bottom: 50px;
+  }
+
+  .offer__formInputName, .offer__formInputEmail {
+    width: 95vw;
+    height: 50px;
+    margin: 10px;
+    padding: 0;
+    border: 0px solid;
+    text-indent: 20px;
+    font: 400 14px Roboto;
+  }
+
+  .offer__formInputMsg {
+    width: 95vw;
+    height: 175px;
+    margin: 10px;
+    padding: 0;
+    border: 0px solid;
+  }
+
+  .socLogo__pic {
+    padding: 55px 10.9px 56px;
+    width: 30.6px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .body__header {
+    display: block;
+  }
+
+  .body__main {
+    display: block;
+  }
+
+  .body__footer {
+    display: block;
+  }
+
+  .headLogo__text {
+    margin: -10px 0 25px 0;
+    padding: 20px calc(50% - 57.6px) 25px;
+
+  }
+
+  .headNav__nav {
+    position: relative;
+    margin: -26px 0 0 9vw;
+    text-align: center;
+    line-height: 39px;
+  }
+
+  .headNav__link {
+    padding: 0 10vw 0 0;
+  }
+
+  .designPic__img {
+    position: relative;
+    float: none;
+    background-size: 70%;    
+    margin: 0 5px;
+  }
+
+  .designText__text {
+    text-align: center;
+    margin: 0px 10px;
+  }
+
+  .text__p {
+    padding: 20px 0px;
+  }
+
+  .text__h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 2vh 0;
+  }
+
+  .skills__text, .text__h2 {
+    text-align: center;
+    margin: 10px 10px;
+  }
+
+  .designText__button {
+    background-color: #34547A;
+    left: calc(50% - 112.5px);
+    height: 65px;
+    width: 225px;
+    margin: 0 0 15px 0;
+    padding: 0px;
+    border: 0px solid #ffffff;
+  }
+
+  .aboutMe__text {
+    left: 0;
+    margin: 10px 10px;
+  }
+
+  .skills__bar-1 {
+    height: 4px;
+    width: 90%;
+  }
+
+  .skills__bar-2 {
+    margin-top: -4px;
+    height: 4px;
+    width: calc(90% - 20vw);
+  }
+
+  .myJob__video {
+    left: auto;
+    width: 90%;
+    height: 26vh;
+    padding: 0 5% 10px;
+  }
+
+  .galery {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: auto;
+    grid-gap: 1vw;
+  }
+
+  .galery__pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .offer__formButton {
+    background-color: #34547A;
+    height: 65px;
+    width: 225px;
+    margin: 0 calc(50% - 95px) 37px;
+    padding: 0px;
+    border: 0px solid #ffffff;
+  }
+
+  .copyright-g {
+    margin-left: calc(50% - 103px);
+    padding: 15px 10px;
+  }
+
+  .socLogo {
+    margin-left: calc(50% - 103px);
+    width: 206px;
+    height: 40px;
+  }
+
+  .socLogo__pic {
+    padding: 0 10.9px;
+    width: 43.75px;
+    height: 40px;
+  }
+}*/
